@@ -1,0 +1,51 @@
+.block {
+    position: relative;
+    display: block;
+    height: 100%;
+    margin-right: 30px;
+    &:hover {
+        cursor: pointer;
+    }
+
+    &_active {
+        border:2px solid orange;
+    }
+}
+
+.video {
+    height: 100%;
+    width: auto;
+}
+
+.name {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.audio {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 90px;
+    padding: 8px;
+    
+    &_icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        box-shadow: 1px 1px 5px 0.5px gray;
+        background-color: white;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
